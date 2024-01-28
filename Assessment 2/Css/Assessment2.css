@@ -1,0 +1,132 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary-bright-orange: hsl(31,77%,52%);
+    --color-primary-dark-cyan: hsl(184,100%,22%);
+    --color-primary-v-dark-cyan: hsl(179,100%,13%);
+    --para-white: hsla(0, 0%, 100%, 0.75);
+    --backg-very-light-grey: hsl(0, 0%, 95% );
+    --font-family-lexend-deca: 'Lexend Deca', sans-serif;
+    --font-family-big-s: 'Big Shoulders Display', cursive;
+}
+
+.main{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5.5rem;
+}
+
+.wrapper{
+    /* height: 70%; */
+    width: 60%;
+    /* border: 1px solid black; */
+    display: flex;
+    border-radius: 3rem;
+    /* flex-wrap: wrap; */
+    
+}
+
+.cars{
+    width:100%;
+    /* height: 100%; */
+    /* border: 0.5px solid black; */
+    padding-left: 2rem;
+    padding-top: 3rem;
+    padding-right:2.3rem;
+}
+
+h1{
+    font-family: var(--font-family-big-s);
+    color: var(--backg-very-light-grey);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sedans{
+    background-color: var(--color-primary-bright-orange);
+}
+
+.suvs{
+    background-color: var(--color-primary-dark-cyan);
+}
+
+.luxury{
+    background-color: var(--color-primary-v-dark-cyan);
+}
+
+button{
+    font-family: var(--font-family-lexend-deca);
+    margin-bottom: 2rem;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+
+}
+
+p{
+    color: var(--backg-very-light-grey);
+    font-family: var(--font-family-lexend-deca);
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.btn1{
+    color: var(--color-primary-bright-orange);
+}
+.btn2{
+    color: var(--color-primary-dark-cyan);
+
+}
+
+.btn3{
+    color: var(--color-primary-v-dark-cyan);
+}
+
+button:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+
+.four{
+    position: absolute;
+    bottom: 5px;
+    /* margin-bottom: 10px; */
+    
+}
+
+.cars{
+    position: relative;
+}
+
+
+@media screen and (max-width:800px) {
+    .wrapper{
+        width: 95%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .wrapper{
+
+        width: 80%;
+    }
+}
+

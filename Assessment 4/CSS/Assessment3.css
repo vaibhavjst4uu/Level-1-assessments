@@ -1,0 +1,158 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.root{
+    --color-primary-Desaturated-Red:hsl(0, 36%, 70%);
+--color-primary-Soft-Red: hsl(0, 93%, 68%);
+--color-Dark-Grayish-Red: hsl(0, 6%, 24%);
+--font-family-Josefin-Sans:'Josefin Sans', sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.main{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+    
+}
+
+.left{
+    width: 100%;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+   padding: 15px 60px;
+}
+.one{
+/* border: 1px solid black; */
+}
+.two{
+
+}
+.logo{
+/* height: 100%; */
+padding-top: 2.5rem;
+padding-bottom: 6.2rem;
+}
+.mobile{
+    /* background-image: url(../images/hero-mobile.jpg); */
+    max-width: 100%;
+    display: none;
+     /* background-size: cover; */
+    /* font-family: var(--font-family-Josefin-Sans); */
+    /* background-position: center; */
+    box-sizing: border-box;
+    
+}
+
+.right{
+    width: 100%;
+    background-image:url(../images/hero-desktop.jpg);
+    background-size: cover;
+    /* font-family: var(--font-family-Josefin-Sans); */
+    background-position: center;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.h1-firstchild{
+    color: hsl(0, 36%, 70%);
+}
+.two>p{
+    margin-top: 55px;
+    color: hsl(0, 36%, 70%);
+    opacity: 0.8;
+}
+.btn-wrapper{
+    width:100%;
+    max-width: 100%;
+    position: relative;
+    margin-top:3.4rem;
+    margin-bottom: 9.4rem;
+}
+
+.btn-wrapper input{
+    background: transparent;
+    border: 2px solid hsl(0, 36%, 70%);
+    width: 100%;
+    border-radius: 50px;
+    padding: 0.7rem 1.4rem;
+}
+.btn-wrapper button{
+    background-color:hsl(0, 36%, 70%) ;
+    border-radius: 42%;
+    height: 100%;
+    width: 15%;
+
+    aspect-ratio: 1;
+    position: absolute;
+    right: 0;
+    border: none;
+
+}
+
+@media screen and (max-width:800px) {
+    .mobile{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .mobile img{
+        width: 100%;
+    }
+    .right{
+        display: none;
+    }
+    .left{
+        padding: 2rem 20% 2rem 20%;
+    }
+    .container{
+        width: 100%;
+        
+    }
+    .logo{
+        padding-top: 1rem;
+        padding-bottom:1rem;
+        margin-bottom: 1rem;
+    }
+    .logo img{
+        width: 35%;
+    }
+    .one{
+        display: flex;
+        flex-direction: column;
+    }
+    .two h1{
+        text-align: center;
+    }
+    .two p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:600px)  {
+    .logo img{
+        width: 35%;
+        margin-left: 1rem;
+    }
+    .mobile img{
+        width: 80%;
+        margin-left: 1rem;
+    }
+
+}

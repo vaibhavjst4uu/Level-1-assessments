@@ -1,0 +1,243 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* variables */
+:root{
+    --color-primary-Very-Dark-Magenta:hsl(300, 43%, 22%);
+    --color-primary-soft-pink:hsl(333, 80%, 67%);
+    --color-dark-greyish-magenta:hsl(303, 10%, 53%);
+    --color-light-greyish-magenta:hsl(300, 24%, 96%);
+    --color-white:hsl(0, 0%, 100%);
+    --font-family-league-spartan:'League Spartan', sans-serif;
+}
+
+.main{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    height: 100%; 
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.upper{
+    width: 100%;
+    height: 50%; 
+    /* border: 1px solid black; */
+    display: flex;
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+
+}
+.lower{
+    width: 100%;
+    /* height: 50%; */
+    /* border: 1px solid black ; */
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+    /* padding: 2rem; */
+}
+
+.box1{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.box2{
+    width: 30%;
+    height: 60%;
+    background-color: var(--color-primary-Very-Dark-Magenta);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    
+
+}
+
+.box2 p{
+    line-height: 1.3rem;
+    font-size: 15px;
+}
+.left{
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.left p{
+    margin-top:10px;
+    padding-right: 75px;
+    color: var(--color-dark-greyish-magenta);
+    font-family: var(--font-family-league-spartan);
+}
+.left h1{
+    font-family: var(--font-family-league-spartan);
+    font-weight: 700;
+    color: var(--color-primary-Very-Dark-Magenta);
+    font-size: 2.5rem;
+}
+
+.right{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    font-size: 1rem;
+    /* padding-left: 20px; */
+}
+.review{
+    margin-left: 10px;
+}
+.report-guru{
+    margin-left: 60px;
+}
+.best-tech{
+    margin-left: 100px;
+}
+.single{
+    display: flex;
+    width: 70%;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--color-light-greyish-magenta);
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin-top: 10px;
+}
+
+
+.img{
+    display: flex;
+}
+img{
+    border-radius: 50%;
+}
+
+.photo{
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+.img h3{
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+.name{
+    color:var(--color-light-greyish-magenta);
+    font-family: var(--font-family-league-spartan);
+}
+.type{
+    color: var(--color-dark-greyish-magenta);
+    font-family: var(--font-family-league-spartan);
+}
+.box2 p{
+    color: var(--color-light-greyish-magenta);
+    font-family: var(--font-family-league-spartan);
+    font-size: 1rem;;
+    margin: 0.5rem 0.5rem;
+}
+
+.one{
+    margin-right: 0.3rem ;
+    margin-bottom: 8.4rem;
+    margin-top: 2rem;
+}
+.two{
+    margin-top: 4rem;
+   margin-bottom: 6rem;
+
+}
+.three{
+margin-top: 6rem;
+margin-bottom: 4rem;
+}
+
+
+@media screen and (max-width:810px) {
+    .container{
+        align-items: center;
+    }
+
+    .left p{
+        padding-right: 0;
+    }
+    .upper{
+        flex-direction: column;
+        background-image:url(../images/bg-pattern-top-mobile.svg);
+    }
+
+
+    .lower{
+        flex-direction: column;
+        background-image: url(../images/bg-pattern-bottom-mobile.svg);
+    }
+    .box1{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .review{
+        margin-left: 0px;
+    }
+    
+    
+    .report-guru{
+        margin-left: 0px;
+    }
+    .best-tech{
+        margin-left: 0px;
+    }
+    .single{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .box2{
+        width: 100%;
+        height: 100%;
+    }
+    .one{
+        /* margin-right: 0.3rem ; */
+        margin-bottom: 0.3rem;
+        margin-top: 0.3rem;
+    }
+    .two{
+        margin-top: 0.3rem;
+       margin-bottom: 0.3rem;
+    
+    }
+    .three{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    }
+
+    .right{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .left{
+        padding-top: 20px;
+        /* text-align: center; */
+
+    }
+    
+}

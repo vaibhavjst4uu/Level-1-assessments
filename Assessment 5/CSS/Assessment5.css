@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    height:100vh;
+    /* border: 1px solid black; */
+    padding-top: 10px;
+    /* padding-bottom: 5px; */
+    /* display: flex;
+    flex-direction: column; */
+    /* display: flex;
+    align-items: center;
+    justify-content:center ; */
+}
+.one{
+    margin: 0 auto;
+    width: 100%;
+    height: 7%;
+    /* border: 1px solid black; */
+    padding-left: 45%;
+    padding-right: 50%;
+    margin-bottom: 10px;
+    
+}
+.two{
+width: 100%;
+/* height: 25%; */
+/* border: 1px solid black; */
+display: flex;
+}
+.two-left{
+    width: 30%;
+}
+.two img{
+    width:20rem;
+}
+/* .two-left img{
+    width: 100%;
+    height: inherit;
+} */
+.two-right{
+    width: 30%;
+}
+/* .two-right img{
+    width: 100%;
+    height: inherit;
+} */
+.two-mid{
+    width: 40%;
+    text-align: center;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 20px;
+}
+.h1-lower{
+    margin-bottom: 35px;
+    line-height: 1rem;
+}
+.two-mid p{
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    color: grey;
+}
+.download{
+    background-color: rgba(75,150,169,255);
+    height: 2rem;
+    border-radius: 7%;
+    width: 10rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+.what{
+    background-color: #855fb2;
+    height: 2rem;
+    border-radius: 7%;
+    width: 7rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.three{
+    margin: 0 auto;
+    width: 100%;
+    height:20%;
+    /* border: 1px solid black; */
+    display: none;
+}
+.four{
+width: 100%;
+/* height: 30%; */
+/* border: 1px solid black; */
+padding-left: 20px;
+padding-top: 5px;
+justify-content: center;
+margin-top: 100px;
+text-align: center;
+width: 100%;
+}
+.four-upper{
+    padding-bottom: 10px;
+    padding-left: 49%;
+    margin-top: 10px;
+}
+.four-upper div{
+    /* border: 1px solid black; */
+    width: 6%;
+    /* height: 35px; */
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.four-lower{
+    margin-top: 20px;
+    display: flex;
+    /* height: 80%; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.four-lower img{
+    width: 70%;
+    /* height: 100%; */
+    /* margin-right: 20px; */
+}
+.five{
+width: 100%;
+/* height:25% ; */
+text-align: center;
+/* border: 1px solid black; */
+padding-left: 450px;
+padding-right: 450px; ;
+margin-bottom: 40px;
+}
+.five-h1-lower{
+   margin-bottom: 20px;
+   
+}
+.five h4{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: rgba(75,150,169,255);
+}
+.five p{
+    color: grey;
+}
+.six{
+height: 40%;
+width:100% ;
+/* border: 1px solid black; */
+background-image: url(../image/desktop/image-footer.jpg);
+background-repeat: no-repeat;
+background-position: cover;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+/* z-index: 10; */
+}
+.six-one{
+    z-index: 1;
+    margin-right: 60px;
+    color: white;
+}
+.six-two{
+    z-index: 1;
+    margin-right: 60px;
+    color: white;
+}
+.six-three{
+    z-index: 1;
+}
+.six-three button{
+    width: 150px;
+    border: none;
+    background-color:#855fb2 ;
+    padding: 15px;
+    border-radius: 18px;
+}
+.six::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color: rgb(101, 151, 168);
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
+.zero-two_section{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zero-two_section p{
+    position: relative;
+}
+
+.zero-two_section p::before{
+    content: "02";
+    position: absolute;
+    top: 49px;
+    left: -6px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 1px;
+    height: 120px;
+    background-color: gray;
+    position: relative;
+    color: gray;
+        bottom: -29px;
+    left: 15px;
+}
